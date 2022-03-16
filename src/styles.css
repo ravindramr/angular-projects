@@ -1,0 +1,10 @@
+/* Add application styles & imports to this file! */
+h1{
+  border-color: brown;
+  text-align: center;
+  color: darkmagenta;
+}
+h3{
+  color: green;
+  text-align: center;
+}
