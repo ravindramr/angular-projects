@@ -1,14 +1,29 @@
 <my-app>loading</my-app>
+<head>
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("namee").value;
+               alert("the data is");    
+    }
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("namee").value;
+               alert("the age is");    
+    }
+    
+  </script>
+  </head>
 <body>
 <h1>Hello Candidate</h1>
 <h3>Fill Your Details Here</h3>
 
-<form action="sub" class="f">
+<form action=onsubmit="showInput();" class="f">
   <label for="name">Enter Your Name:</label>
-  <input type="text" placeholder="please fill name">
+  <input type="text" id="namee" placeholder="please fill name">
   <br><br>
   <label for="age">Enter Age:</label>
-<input type="text" placeholder="fill age">
+<input type="text" id="namee" placeholder="fill age">
 <br><br>
 <label for="gender">GENDER</label>
 <br>
@@ -32,6 +47,9 @@
 <br><br>
 <label for="">Upload Your Image</label><br>
 <input type="file"><br><br>
-<input type="submit">
+<input type="button" onclick="showInput()">Submit</button>
 <input type="reset">
+<br>
+<label>Your input: </label>
+  <p><span id='display'></span></p>
 </body>
